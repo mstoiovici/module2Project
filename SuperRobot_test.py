@@ -9,7 +9,7 @@ from SuperRobot_functions import *
 
 Mari=MiniBalanceTrack("Sera", 18, 2000)
 
-product=input("Welcome to our shop! You have a balance of 2000. What do you want to buy today? Choose from laptop, phone or smartwatch. ")
+product=input("Welcome to this shop! You have a balance of 2000. What do you want to buy today? Choose from laptop, phone or smartwatch. ")
 Mari.substract_from_balance(product)
 Mari.check_balance()
 Mari.check_balance()

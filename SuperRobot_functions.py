@@ -6,14 +6,14 @@ Created on Fri Dec  7 12:18:34 2018
 @author: maria
 """
 
-class BalanceTrack():
+class BalanceTrack(): #ShoppingAssistant
     def __init__(self, name, age=0, balance=0, loan_taken=0):
         self.name=name
         self.age=age
         self.balance=balance
         self.loan_taken = loan_taken
   
-    def substract_from_balance(self,product):
+    def substract_from_balance(self,product): #go_shopping
         
         if product=="laptop":
             print("A laptop is 1020")
@@ -51,9 +51,9 @@ class BalanceTrack():
             
         
     
-class MiniBalanceTrack(BalanceTrack):
+class MiniBalanceTrack(BalanceTrack): #MiniShoppingAssistant
  
-     def add_loan_to_balance(self,loan_amount=1000):
+     def add_loan_to_balance(self,loan_amount=1000): #give_loan
         
         if self.loan_taken==0:
             self.balance+=loan_amount

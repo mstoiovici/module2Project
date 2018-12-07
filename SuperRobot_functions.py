@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Dec  6 12:26:10 2018
+Created on Fri Dec  7 12:18:34 2018
 
 @author: maria
 """
+
 class BalanceTrack():
     def __init__(self, name, age=0, balance=0, loan_taken=0):
         self.name=name
@@ -72,13 +73,3 @@ class MiniBalanceTrack(BalanceTrack):
         
         
    
-
-Mari=MiniBalanceTrack("Sera", 18, 2000)
-
-product=input("Welcome to our shop! You have a balance of 2000. What do you want to buy today? Choose from laptop, phone or smartwatch. ")
-
-Mari.substract_from_balance(product)
-Mari.check_balance()
-Mari.check_balance()
-Mari.check_balance()
-

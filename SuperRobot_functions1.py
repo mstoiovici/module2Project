@@ -51,14 +51,41 @@ class ShoppingAssistant(object):
    
             
     def check_balance(self):
+        """
         if self.balance>=800:
             print("\nYou can continue shopping!!")
-            self.product=input("Choose from laptop, phone or smartwatch ")
+            self.product=input("Choose from laptop, phone or smartwatch:\n ")
             #self.get_product()
             self.buy()
             #print(self.balance)
             self.check_balance()
             return self.balance
+            """
+        if self.balance>=1020:
+            print("\nYou can continue shopping!!")
+            self.product=input("Choose from laptop, phone or smartwatch: \n ")
+            #self.get_product()
+            self.buy()
+            #print(self.balance)
+            self.check_balance()
+            return self.balance
+        elif self.balance>=850:
+            print("\nYou can continue shopping!!")
+            self.product=input("Choose from phone or smartwatch: \n ")
+            #self.get_product()
+            self.buy()
+            #print(self.balance)
+            self.check_balance()
+            return self.balance
+        elif self.balance>=800:
+            print("\nYou can continue shopping!!")
+            self.product=input("Your balance will be enough to buy a phone. Please type phone if you want to buy one:\n ")
+            #self.get_product()
+            self.buy()
+            #print(self.balance)
+            self.check_balance()
+            return self.balance
+        
         else:
             print("\n You don't have enough balance for shopping!You will receive a loan of 1000!!")
             self.give_loan()
@@ -76,7 +103,7 @@ class LoaningShoppingAssistant(ShoppingAssistant):
             self.balance+=loan_amount
             #print(self.balance)
             print("\n You now have: " +str(self.balance) + "! You can continue shopping!!")
-            self.product=input("Choose from laptop, phone or smartwatch ")
+            self.product=input("Choose from laptop, phone or smartwatch: \n ")
             self.buy()
             #self.check_balance()
             return self.balance

@@ -51,7 +51,7 @@ class BalanceTrack(): #ShoppingAssistant
             
         
     
-class MiniBalanceTrack(BalanceTrack): #MiniShoppingAssistant
+class MiniBalanceTrack(BalanceTrack): 
  
      def add_loan_to_balance(self,loan_amount=1000): #give_loan
         
@@ -65,7 +65,8 @@ class MiniBalanceTrack(BalanceTrack): #MiniShoppingAssistant
             return self.balance
         else:
             print("You now have only ",self.balance)
-            print("If don't have enough balance and you already had a loan you can't continue your shopping! Please pay your loan first!")
+            print('please pay your loan')
+            
         
        
      

@@ -17,7 +17,7 @@ class BalanceTrack():
         if product=="laptop":
             print("A laptop is 1020")
             self.balance-=1020
-            #print(self.balance)
+            
             return self.balance
         elif product=="phone":
             print("A phone is 800")
